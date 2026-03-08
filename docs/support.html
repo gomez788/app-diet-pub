@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AppDiet Tracker Support</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #fbf6ef;
+        --surface: #fffdf8;
+        --text: #231c15;
+        --muted: #65594d;
+        --line: #e2d7c9;
+        --accent: #d6632f;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Hiragino Sans", "Yu Gothic", sans-serif;
+        background: linear-gradient(180deg, #fffaf3 0%, var(--bg) 100%);
+        color: var(--text);
+      }
+
+      .wrap {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 28px 18px 56px;
+      }
+
+      .panel {
+        background: var(--surface);
+        border: 1px solid var(--line);
+        border-radius: 22px;
+        padding: 28px;
+        box-shadow: 0 10px 26px rgba(35, 28, 21, 0.05);
+      }
+
+      h1,
+      h2 {
+        margin: 0 0 12px;
+      }
+
+      h1 {
+        font-size: clamp(2rem, 4vw, 3rem);
+      }
+
+      p,
+      li {
+        line-height: 1.75;
+      }
+
+      .muted {
+        color: var(--muted);
+      }
+
+      .block {
+        margin-top: 18px;
+        padding-top: 18px;
+        border-top: 1px solid var(--line);
+      }
+
+      .lang {
+        margin-top: 24px;
+      }
+
+      .badge {
+        display: inline-block;
+        margin-bottom: 10px;
+        padding: 6px 10px;
+        border-radius: 999px;
+        background: rgba(214, 99, 47, 0.1);
+        color: var(--accent);
+        font-weight: 700;
+        font-size: 0.86rem;
+      }
+
+      a {
+        color: var(--accent);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <section class="panel">
+        <a href="./index.html">Home</a>
+        <h1>AppDiet Tracker Support</h1>
+        <p class="muted">
+          App Store の Support URL 用ページです。サポート問い合わせ先は公開前に実運用の連絡先へ差し替えてください。
+        </p>
+
+        <div class="lang">
+          <span class="badge">日本語</span>
+          <h2>サポート</h2>
+          <p>
+            AppDiet Tracker は、カロリー記録に絞って続けやすさを重視したダイエット記録アプリです。
+            アプリの利用、Apple Health 連携、グループ機能、アカウント関連などについてサポートを提供します。
+          </p>
+
+          <div class="block">
+            <h2>お問い合わせ</h2>
+            <p>
+              メール: <a href="mailto:support@example.com">support@example.com</a><br />
+              ここは本番公開前に正式なサポートメールアドレスへ変更してください。
+            </p>
+          </div>
+
+          <div class="block">
+            <h2>主なサポート内容</h2>
+            <ul>
+              <li>アプリの使い方に関する質問</li>
+              <li>カロリー記録や目標設定に関する案内</li>
+              <li>グループ作成、参加、進捗表示に関する案内</li>
+              <li>Apple Health 連携に関する不具合相談</li>
+              <li>アカウントやサインインに関する問い合わせ</li>
+            </ul>
+          </div>
+
+          <div class="block">
+            <h2>よくある案内</h2>
+            <ul>
+              <li>Apple Health 連携は、iPhone の権限許可が必要です。</li>
+              <li>グループ機能の利用にはサインインが必要な場合があります。</li>
+              <li>ネットワーク状況によって同期結果の反映に時間がかかる場合があります。</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="lang">
+          <span class="badge">English</span>
+          <h2>Support</h2>
+          <p>
+            AppDiet Tracker is a calorie-focused diet app designed for quick logging and long-term consistency.
+            Support is available for app usage, Apple Health integration, group features, and account-related issues.
+          </p>
+
+          <div class="block">
+            <h2>Contact</h2>
+            <p>
+              Email: <a href="mailto:support@example.com">support@example.com</a><br />
+              Replace this with your production support address before public release.
+            </p>
+          </div>
+
+          <div class="block">
+            <h2>What we support</h2>
+            <ul>
+              <li>Questions about using the app</li>
+              <li>Guidance on calorie logging and goal settings</li>
+              <li>Help with group creation, joining, and progress visibility</li>
+              <li>Issues related to Apple Health integration</li>
+              <li>Account and sign-in related questions</li>
+            </ul>
+          </div>
+
+          <div class="block">
+            <h2>Common guidance</h2>
+            <ul>
+              <li>Apple Health integration requires permission on the iPhone.</li>
+              <li>Group features may require sign-in.</li>
+              <li>Sync results may take time depending on network conditions.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

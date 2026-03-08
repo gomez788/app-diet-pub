@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AppDiet Tracker</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f6f1e8;
+        --surface: #fffaf2;
+        --text: #1f1a14;
+        --muted: #6f6255;
+        --line: #dfd2c4;
+        --accent: #d6632f;
+        --accent-dark: #9f431a;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Hiragino Sans", "Yu Gothic", sans-serif;
+        background:
+          radial-gradient(circle at top left, rgba(214, 99, 47, 0.12), transparent 24rem),
+          linear-gradient(180deg, #fbf7f1 0%, var(--bg) 100%);
+        color: var(--text);
+      }
+
+      .container {
+        max-width: 880px;
+        margin: 0 auto;
+        padding: 32px 20px 56px;
+      }
+
+      .hero {
+        background: var(--surface);
+        border: 1px solid var(--line);
+        border-radius: 24px;
+        padding: 32px;
+        box-shadow: 0 12px 32px rgba(31, 26, 20, 0.06);
+      }
+
+      h1,
+      h2 {
+        margin: 0 0 12px;
+        line-height: 1.15;
+      }
+
+      h1 {
+        font-size: clamp(2rem, 4vw, 3.6rem);
+      }
+
+      p {
+        margin: 0 0 16px;
+        line-height: 1.7;
+      }
+
+      .lead {
+        font-size: 1.08rem;
+        color: var(--muted);
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 16px;
+        margin-top: 24px;
+      }
+
+      .card {
+        background: rgba(255, 250, 242, 0.82);
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        padding: 20px;
+      }
+
+      .card a {
+        display: inline-block;
+        margin-top: 12px;
+        color: var(--accent-dark);
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      .card a:hover {
+        color: var(--accent);
+      }
+
+      .section {
+        margin-top: 28px;
+        background: rgba(255, 250, 242, 0.72);
+        border: 1px solid var(--line);
+        border-radius: 20px;
+        padding: 24px;
+      }
+
+      ul {
+        margin: 0;
+        padding-left: 20px;
+        line-height: 1.7;
+      }
+
+      .footer {
+        margin-top: 20px;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <section class="hero">
+        <p>AppDiet Tracker</p>
+        <h1>Simple calorie tracking you can keep.</h1>
+        <p class="lead">
+          食事の細かい入力ではなく、カロリー記録に絞ったシンプルなダイエット記録アプリです。
+          簡単に記録し、知人とのグループで進捗を見える化し、Apple Health とも連携できます。
+        </p>
+
+        <div class="grid">
+          <article class="card">
+            <h2>Support</h2>
+            <p>
+              AppDiet Tracker の問い合わせ先、サポート方針、利用時の案内を掲載しています。
+            </p>
+            <a href="./support.html">Open support page</a>
+          </article>
+
+          <article class="card">
+            <h2>Privacy Policy</h2>
+            <p>
+              取得データ、保存方法、Apple Health 利用、削除方針を日本語と英語で掲載しています。
+            </p>
+            <a href="./privacy.html">Open privacy policy</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Core Value</h2>
+        <ul>
+          <li>Complicated meal logging is hard to sustain, so the app focuses on calories only.</li>
+          <li>Logging is designed to be quick and low-friction.</li>
+          <li>You can create groups with people you know and track achievement progress together.</li>
+          <li>Apple Health integration helps bring burned calorie data into the app.</li>
+        </ul>
+      </section>
+
+      <p class="footer">
+        This page is intended for GitHub Pages hosting for App Store support and privacy links.
+      </p>
+    </main>
+  </body>
+</html>
