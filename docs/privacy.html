@@ -105,10 +105,10 @@
             <h3>1. 収集する情報</h3>
             <p>AppDiet Tracker は、以下の情報を取り扱う場合があります。</p>
             <ul>
-              <li>摂取カロリー、消費カロリーなどの記録データ</li>
-              <li>体重、目標体重、身長、目標期間などの設定情報</li>
-              <li>サインイン時のアカウント識別情報</li>
-              <li>グループ機能利用時のグループ参加情報および進捗情報</li>
+              <li>端末内に保存される詳細記録（摂取カロリー、消費カロリー、体重、目標値など）</li>
+              <li>サインイン時の表示名およびアカウント識別情報</li>
+              <li>グループ機能利用時のグループ参加情報および達成日数・連続記録などの進捗情報</li>
+              <li>クラウド同期時の日次達成状態（達成 / 非達成）</li>
               <li>Apple Health 連携を許可した場合の消費カロリー情報</li>
             </ul>
           </div>
@@ -116,9 +116,9 @@
           <div class="section">
             <h3>2. 利用目的</h3>
             <ul>
-              <li>カロリー記録、目標管理、進捗表示の提供</li>
-              <li>グループ機能による進捗共有</li>
-              <li>Apple Health からの消費カロリー取り込み</li>
+              <li>端末内でのカロリー記録、目標管理、進捗表示の提供</li>
+              <li>グループ機能による達成状況共有とランキング表示</li>
+              <li>Apple Health からの消費カロリー取り込み（端末内利用）</li>
               <li>アプリの保守、改善、不具合調査</li>
             </ul>
           </div>
@@ -127,16 +127,19 @@
             <h3>3. Apple Health データについて</h3>
             <p>
               Apple Health データは、ユーザーが明示的に連携を許可した場合にのみ利用します。
-              取得したデータは、アプリ内での表示、記録補助、同期機能のためにのみ使用し、
+              取得したデータは、端末内での表示と記録補助のためにのみ使用し、
               広告目的や第三者広告プラットフォームへの共有には使用しません。
+              Apple Health の生データそのものをクラウドへ直接保存することはありません。
             </p>
           </div>
 
           <div class="section">
             <h3>4. 保存と共有</h3>
             <p>
-              データは端末内またはアプリ機能提供に必要なクラウド基盤上に保存される場合があります。
-              法令に基づく場合を除き、ユーザーデータを第三者へ販売することはありません。
+              詳細な摂取/消費カロリー記録、体重、目標、Apple Health データは端末内に保存されます。
+              サインインしてグループ機能を利用する場合、クラウド基盤上には表示名、グループ所属情報、
+              および日次達成状態（達成 / 非達成）のみを保存します。法令に基づく場合を除き、
+              ユーザーデータを第三者へ販売することはありません。
             </p>
           </div>
 
@@ -145,7 +148,7 @@
             <ul>
               <li>Apple Health の権限は iPhone の設定からいつでも取り消せます。</li>
               <li>アプリの利用停止や削除により、端末内データの削除が可能です。</li>
-              <li>クラウド保存データの削除導線を提供する場合は別途案内します。</li>
+              <li>アプリ内のアカウント削除機能により、クラウド保存データと Cognito アカウントを削除できます。</li>
             </ul>
           </div>
 
@@ -167,10 +170,10 @@
             <h3>1. Information We Collect</h3>
             <p>AppDiet Tracker may process the following types of information:</p>
             <ul>
-              <li>Calorie intake and calories burned records</li>
-              <li>Settings such as weight, target weight, height, and goal duration</li>
-              <li>Account identifiers used for sign-in</li>
-              <li>Group membership and progress information for group features</li>
+              <li>Detailed logs stored on-device, such as calorie intake, calories burned, weight, and goals</li>
+              <li>Display name and account identifiers used for sign-in</li>
+              <li>Group membership and progress information such as achieved days and streaks</li>
+              <li>Daily achievement status (achieved / not achieved) used for cloud sync</li>
               <li>Burned calorie data from Apple Health, only if permission is granted</li>
             </ul>
           </div>
@@ -178,9 +181,9 @@
           <div class="section">
             <h3>2. How We Use Information</h3>
             <ul>
-              <li>To provide calorie logging, goal tracking, and progress views</li>
-              <li>To enable progress sharing through group features</li>
-              <li>To import burned calorie data from Apple Health</li>
+              <li>To provide on-device calorie logging, goal tracking, and progress views</li>
+              <li>To enable group ranking and progress sharing</li>
+              <li>To import burned calorie data from Apple Health for on-device use</li>
               <li>To maintain, improve, and troubleshoot the app</li>
             </ul>
           </div>
@@ -189,17 +192,19 @@
             <h3>3. Apple Health Data</h3>
             <p>
               Apple Health data is used only when the user explicitly grants permission.
-              Any data received from Apple Health is used only for in-app display, logging support,
-              and synchronization features. It is not used for advertising and is not shared with
-              third-party advertising platforms.
+              Any data received from Apple Health is used only for on-device display and logging support.
+              It is not used for advertising, is not shared with third-party advertising platforms,
+              and raw Apple Health data is not directly stored in the cloud.
             </p>
           </div>
 
           <div class="section">
             <h3>4. Storage and Sharing</h3>
             <p>
-              Data may be stored on the device and, where needed to provide app features, on cloud
-              infrastructure. Except as required by law, user data is not sold to third parties.
+              Detailed calorie logs, weight, goals, and Apple Health data are stored on the device.
+              When sign-in and group features are used, only display name, group membership,
+              and daily achievement status (achieved / not achieved) are stored on cloud infrastructure.
+              Except as required by law, user data is not sold to third parties.
             </p>
           </div>
 
@@ -208,7 +213,7 @@
             <ul>
               <li>Apple Health permissions can be revoked at any time in iPhone settings.</li>
               <li>Removing or uninstalling the app can delete on-device data.</li>
-              <li>If cloud data deletion flows are provided, they will be described separately.</li>
+              <li>The in-app account deletion flow can remove cloud-stored data and the Cognito account.</li>
             </ul>
           </div>
 
